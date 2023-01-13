@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center"> Create User </h3>
+            <hr />
+            <div class="card-body">
+                <form  [formGroup]="userForm" (ngSubmit)="onSubmit(userForm)">
+
+                        <label> id</label>
+                        <input type="number" class="form-control" formControlName="id"
+                            >
+
+                        <label> user id</label>
+                        <input type="number" class="form-control" id="lastName" formControlName="userId"
+                            >
+
+                        <label> title</label>
+                        <input type="text" class="form-control" id="emailId" formControlName="title"
+                            >
+                        <label> body</label>
+                        <input type="text" class="form-control" id="emailId" formControlName="body"
+                            >
+                    <br />
+                    <button class="btn btn-success" type="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

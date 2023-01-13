@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center"> Update User </h3>
+            <hr />
+            <div class="card-body">
+                <form   [formGroup]="userForm" (ngSubmit)="onSubmit(userForm)">
+
+                    <div class="form-group">
+                        <label> id</label>
+                        <input type="number" class="form-control" id="id" value="{{id}}"formControlName="id"
+                            >
+                    </div>
+
+                    <div class="form-group">
+                        <label> user id</label>
+                        <input type="number" class="form-control" value="{{userId}}" id="lastName" formControlName="userId"
+                            >
+                    </div>
+
+                    <div class="form-group">
+                        <label> title</label>
+                        <input type="text" class="form-control" value="{{title}}"id="emailId" formControlName="title"
+                            >
+                    </div>
+                    <div class="form-group">
+                        <label> body</label>
+                        <input type="text" class="form-control" id="emailId" value="{{body}}"formControlName="body"
+                        >
+                    </div>
+                    <br />
+                    <button class="btn btn-success" type="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
